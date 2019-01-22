@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_shorty_path(@shorty) %> |
-<%= link_to 'Back', shorties_path %>
+<div>
+    <p><%= "#{Rails.application.config.host}/#{@shorty.short_url}" %></p>
+</div>
+
+<%= link_to 'Back', root_path %>
